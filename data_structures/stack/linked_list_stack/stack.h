@@ -1,6 +1,9 @@
 #ifndef STACK_H
 # define STACK_H
 
+#include <stdlib.h>
+#include <stdio.h>
+
 typedef struct	s_list {
 	struct s_list	*next;
 	void			*data;
@@ -12,6 +15,7 @@ int		is_empty(t_list *top);
 void	*peek(t_list *top);
 void	push(t_list **head, void *data);
 void	*pop(t_list **head);
-void	destroy_stack(t_list *head);
+void	destroy_stack(t_list **head);
+t_list	*init_stack(void);
 
 #endif

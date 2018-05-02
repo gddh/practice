@@ -1,4 +1,5 @@
 #include "stack.h"
+#include <stdio.h>
 
 int		is_empty(t_stack *stack)
 {
@@ -18,6 +19,8 @@ void	resize_stack(t_stack *stack)
 		stack->maxSize = 1;
 	new_arr = (int *)malloc(sizeof(int) * (stack->maxSize * 2));
 	check_malloc(new_arr);
-	ft_memcpy(new_arr, stack->arr, stack->maxSize);
+	ft_memcpy(new_arr, stack->arr, sizeof(int) * stack->maxSize);
+	free(stack->arr);
+	stack->arr = new_arr;
 	stack->maxSize = stack->maxSize * 2;
 }

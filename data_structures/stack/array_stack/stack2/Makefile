@@ -14,7 +14,7 @@ $(TARGET) : $(OBJS)
 $(OBJS) : stack.h
 
 
-.PHONY : clean fclea ren
+.PHONY : clean fclean ren
 
 clean :
 	/bin/rm $(OBJS)

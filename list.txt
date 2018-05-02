@@ -1,2 +1,32 @@
 1. understand closest pair of points
 2. 8 queens problem
+3. implement a queue by using two stacks
+4. implement the min function with a stack
+6. dequeue with 2 stacks?
+7. binary search
+8. Warnsdorff's algorithm - knight's tour problem
+
+
+- backtracking algorithm
+- review heapsort, quicksort, insertionsort, mergesort
+- bubble sort
+
+
+1. sorting and data structures
+- big O notes
+- implement trees
+	- binary trees
+	- red black trees
+	- avl tree
+2. BFS DFS graph search algorithms
+- backtracking algorithms
+4. C based knowledge
+5. Dijkstra, topological sort
+6. Bit Manipulation and Two's Compliment
+
+
+1. What is the worst time complexity (noted O) of bubble sort ?
+2. Explain what is a BST (Binary Search Tree)
+3. What is the primary advantage of a Linked List ?
+4. What is an algorithm ?
+5. What is LIFO ?

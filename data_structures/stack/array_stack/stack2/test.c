@@ -32,8 +32,8 @@ int main(void)
   }
 
   push(stack, '1');
-  push(stack, '2');
-  push(stack, '3');
+  //push(stack, '2');
+  //push(stack, '3');
   /*
    * Pop each of the characters off of
    * the stack and print them out.
@@ -50,7 +50,5 @@ int main(void)
   destroy_stack(stack);
   printf("destroyed the stack! \n");
 
-  stack = init_stack(-1);
-  peek(stack);
   return 0;
 }
