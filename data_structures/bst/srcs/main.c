@@ -30,7 +30,7 @@ void	order_test(void)
 	printf("\n");
 }
 
-int		main()
+void	deletion_test(void)
 {
     t_node *root = NULL;
     root = insert(root, 50);
@@ -58,5 +58,20 @@ int		main()
     root = deleteNode(root, 50);
     printf("Inorder traversal of the modified tree \n");
     inorder(root);
-    return 0;
+
+}
+
+int		main()
+{
+    t_node *root = NULL;
+    root = insert(root, 50);
+    root = insert(root, 30);
+    root = insert(root, 70);
+
+	printf("\nDelete 50\n");
+    root = deleteNode(root, 50);
+    printf("Inorder traversal of the modified tree \n");
+    inorder(root);
+	deletion_test();
+	return 0;
 }

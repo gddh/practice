@@ -36,7 +36,7 @@ t_node *find_smallest(t_node *node)
 	return find_smallest(node->left);
 }
 
-t_node	*deleteSmallest(t_node *node, int data)
+t_node	*deleteSmallest(t_node *node)
 {
 	t_node *tmp;
 
@@ -46,7 +46,7 @@ t_node	*deleteSmallest(t_node *node, int data)
 		free(node);
 		return tmp;
 	}
-	node->left = deleteSmallest(node->left, data);
+	node->left = deleteSmallest(node->left);
 	return (node);
 }
 
@@ -78,8 +78,7 @@ t_node	*deleteNode(t_node *node, int data)
 		{
 			tmp = node;
 			node = find_smallest(node->right);
-			printf("the smallest is %d\n", node->data);
-			node->right = deleteSmallest(tmp->right, tmp->data);
+			node->right = deleteSmallest(tmp->right);
 			node->left = tmp->left;
 		}
 	}
