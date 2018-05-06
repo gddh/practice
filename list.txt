@@ -1,12 +1,13 @@
 1. understand closest pair of points
-2. 8 queens problem
 3. implement a queue by using two stacks
 4. implement the min function with a stack
 6. dequeue with 2 stacks?
-7. binary search
 8. Warnsdorff's algorithm - knight's tour problem
 
 
+dynamic programming!!!
+
+- trap water problem --> two pointer implementation
 - backtracking algorithm
 - review heapsort, quicksort, insertionsort, mergesort
 - bubble sort
@@ -18,8 +19,6 @@
 	- binary trees
 	- red black trees
 	- avl tree
-2. BFS DFS graph search algorithms
-- backtracking algorithms
 4. C based knowledge
 5. Dijkstra, topological sort
 6. Bit Manipulation and Two's Compliment
@@ -30,3 +29,15 @@
 3. What is the primary advantage of a Linked List ?
 4. What is an algorithm ?
 5. What is LIFO ?
+
+1. What is a stack ?
+2. Define a linear and non-linear data structure (and give one example of each)
+3. What is FIFO ?
+4. What is the worst time complexity of Mergesort ?
+5. Do you know about the TSP ? (Travelling Salesman Problem)
+
+1. What is the big O of Heapsort ?
+2. What is the difference between PUSH and POP ?
+3. What is the difference between queue and stack data structure ?
+4. Explain the difference between little and big endian
+5. How do you find out if a number is a power of 2 (multiple answers possible) ?

@@ -10,7 +10,7 @@ OBJS = $(addprefix objs/, $(addsuffix .o, $(FILES)))
 all : $(NAME)
 
 $(NAME) : $(OBJS)
-	$(CC) $(CFLAGS) -o $(NAME) $(OBJS)
+	$(CC) $(CFLAGS) -o $@ $(OBJS)
 
 $(ODIR)%.o : $(SDIR)%.c | $(ODIR)
 	$(CC) -c $(CFLAGS) $< -o $@
