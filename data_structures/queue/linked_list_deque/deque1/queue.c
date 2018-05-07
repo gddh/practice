@@ -1,11 +1,6 @@
 #include "queue.h"
 #include <stdio.h>
 
-t_queue	*init_queue(void)
-{
-	return (NULL);
-}
-
 void	enqueue_back(t_queue **q_front, qType data)
 {
 	t_queue	*tmp;
@@ -35,11 +30,6 @@ void	enqueue_front(t_queue **q_front, qType data)
 		*q_front = create_node(data);
 }
 
-int		is_empty(t_queue *q)
-{
-	return (q == NULL);
-}
-
 qType	dequeue(t_queue **q_front)
 {
 	t_queue *tmp;
@@ -60,26 +50,8 @@ qType	dequeue(t_queue **q_front)
 	}
 }
 
-int		size(t_queue *q)
+void	destroy_q(t_queue **q)
 {
-	int count;
-
-	count = 0;
-	while (q)
-	{
-		q = q->next;
-		count++;
-	}
-	return (count);
-}
-
-qType	peek(t_queue *q)
-{
-	if (!is_empty(q))
-		return (q->data);
-	else
-	{
-		fprintf(stderr, "Cannot peek into an empty queue.\n");
-		exit(1);
-	}
+	while (!is_empty(q))
+		dequeue(q);
 }

@@ -19,6 +19,6 @@ t_queue				*create_node(qType data);
 void				*ft_memcpy(void *dst, const void *src, size_t n);
 int					ft_strlen(char *str);
 qType				peek(t_queue *q);
-
+void				destroy_q(t_queue **q);
 
 #endif
