@@ -52,6 +52,6 @@ qType	dequeue(t_queue **q_front)
 
 void	destroy_q(t_queue **q)
 {
-	while (!is_empty(q))
+	while (!is_empty(*q))
 		dequeue(q);
 }
