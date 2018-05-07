@@ -25,7 +25,7 @@ dynamic programming!!!
 
 
 1. What is the worst time complexity (noted O) of bubble sort ?
-2. Explain what is a BST (Binary Search Tree)
+2. Explain what is a BST (Binary Search Tree)?
 3. What is the primary advantage of a Linked List ?
 4. What is an algorithm ?
 5. What is LIFO ?
@@ -41,3 +41,22 @@ dynamic programming!!!
 3. What is the difference between queue and stack data structure ?
 4. Explain the difference between little and big endian
 5. How do you find out if a number is a power of 2 (multiple answers possible) ?
+
+
+Monday
+1. DFS BST
+2. BFS BST
+3. Get a correction point
+4. learn method for trap water
+5. Review Fillit 
+6. Deque
+
+Tuesday
+1. Red black trees
+2. Work on Fillit
+3. implement new method for trap water
+4. Notes on trees
+5. get correction point
+
+Wednesday
+1. Rewrite get next line.
