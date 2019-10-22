@@ -11,8 +11,6 @@ def isSameTree(p, q):
         return False
     elif q is None:
         return False
-    elif p.val != q.val:
-        return False
-    return isSameTree(p.left, q.left) and isSameTree(p.right, q.right)
-
-
+    return self.isSameTree(p.left, q.left) and \
+            self.isSameTree(p.right, q.right) and \
+            p.val == q.val
